@@ -22,8 +22,8 @@ export default function FooterBar() {
                         </div>
                         <div className="h-8 w-auto flex items-center">
                             <Image
-                                src="/s34i.svg"
-                                alt="https://files.aethergeo.org/S34I"
+                                src="https://files.aethergeo.org/S34I.svg"
+                                alt="S34I"
                                 width={80}
                                 height={32}
                                 className="h-8 w-auto object-contain"
