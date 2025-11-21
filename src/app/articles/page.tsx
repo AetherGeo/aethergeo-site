@@ -8,6 +8,26 @@ export default function ArticlesPage() {
     const R2_URL = process.env.NEXT_PUBLIC_R2_URL;
     const downloadUrl = R2_URL ? `${R2_URL}/AetherGeo_citation.ris` : "/AetherGeo_citation.ris";
 
+    const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(downloadUrl);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = "AetherGeo_citation.ris";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Download failed", error);
+            // Fallback to standard behavior if fetch fails
+            window.open(downloadUrl, '_blank');
+        }
+    };
+
     return (
         <>
             <div className="min-h-screen bg-zinc-50 dark:bg-black pt-24 pb-12 px-4 sm:px-6">
@@ -48,9 +68,8 @@ export default function ArticlesPage() {
 
                                 <a
                                     href={downloadUrl}
-                                    download="AetherGeo_citation.ris"
-                                    target="_blank"
-                                    className="flex-1 lg:flex-none inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-blue-600 text-white font-semibold shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition-colors gap-2"
+                                    onClick={handleDownload}
+                                    className="flex-1 lg:flex-none inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-blue-600 text-white font-semibold shadow-lg shadow-blue-600/30 hover:bg-blue-500 transition-colors gap-2 cursor-pointer"
                                 >
                                     Citation
                                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

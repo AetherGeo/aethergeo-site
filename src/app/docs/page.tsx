@@ -3,6 +3,27 @@
 import Link from "next/link";
 
 export default function DocsPage() {
+    const pdfUrl = "https://aethergeo.org/UserGuide%20v1.0.pdf";
+
+    const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(pdfUrl);
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = "UserGuide v1.0.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Download failed", error);
+            window.open(pdfUrl, '_blank');
+        }
+    };
+
     return (
         <main className="min-h-screen bg-zinc-50 dark:bg-black pt-20 pb-28 sm:pb-16">
             <div className="max-w-4xl mx-auto px-6">
@@ -40,7 +61,7 @@ export default function DocsPage() {
 
                         <div className="flex flex-wrap items-center gap-3">
                             <Link
-                                href="https://aethergeo.org/UserGuide%20v1.0.pdf"
+                                href={pdfUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 text-white text-sm sm:text-base font-semibold hover:bg-blue-500 transition-colors"
@@ -48,9 +69,9 @@ export default function DocsPage() {
                                 View User Guide v1.0 (PDF)
                             </Link>
                             <a
-                                href="https://aethergeo.org/UserGuide%20v1.0.pdf"
-                                download
-                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/[.08] dark:border-white/[.2] text-sm sm:text-base text-black dark:text-white bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                                href={pdfUrl}
+                                onClick={handleDownload}
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/[.08] dark:border-white/[.2] text-sm sm:text-base text-black dark:text-white bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
                             >
                                 Download PDF
                             </a>
