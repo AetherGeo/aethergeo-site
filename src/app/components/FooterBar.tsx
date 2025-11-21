@@ -22,7 +22,7 @@ export default function FooterBar() {
                         </div>
                         <div className="h-8 w-auto flex items-center">
                             <Image
-                                src="https://files.aethergeo.org/S34I.svg"
+                                src="https://files.aethergeo.org/s34i.svg"
                                 alt="S34I"
                                 width={80}
                                 height={32}

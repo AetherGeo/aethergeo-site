@@ -30,7 +30,7 @@ export default function ArticlesPage() {
 
     return (
         <>
-            <div className="min-h-screen bg-zinc-50 dark:bg-black pt-24 pb-12 px-4 sm:px-6">
+            <div className="min-h-screen bg-zinc-50 dark:bg-black pt-24 pb-28 sm:pb-12 px-4 sm:px-6">
                 <div className="max-w-5xl mx-auto space-y-8">
 
                     {/* Container 1: Cite our Work */}
