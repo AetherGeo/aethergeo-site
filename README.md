@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AetherGeo
 
-## Getting Started
+AetherGeo is a modern software interface for visualizing and processing geospatial data, designed to bridge the gap between advanced remote sensing techniques and geological applications.
 
-First, run the development server:
+![AetherGeo](https://aethergeo.org/AetherGeo.svg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Spectral Unmixing**: Decompose mixed pixels into constituent materials to identify specific minerals.
+- **Mineral Prospectivity Mapping**: Generate probability maps for potential mineral deposits using multi-source data.
+- **Clustering & Dimensionality Reduction**: Apply advanced algorithms like PCA and clustering to simplify complex datasets and reveal hidden patterns.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Citation
 
-## Learn More
+If you use AetherGeo in your research, please cite our work:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> AetherGeo: A Spectral Analysis Interface for Geologic Mapping
+> Published in *Algorithms* (2025)
+> DOI: [10.3390/a18070378](https://doi.org/10.3390/a18070378)
