@@ -2,8 +2,6 @@
 
 AetherGeo is a modern software interface for visualizing and processing geospatial data, designed to bridge the gap between advanced remote sensing techniques and geological applications.
 
-![AetherGeo](https://aethergeo.org/AetherGeo.svg)
-
 ## Features
 
 
