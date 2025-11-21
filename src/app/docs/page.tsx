@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 export default function DocsPage() {
-    const pdfUrl = "https://aethergeo.org/UserGuide%20v1.0.pdf";
+    const pdfUrl = "https://files.aethergeo.org/UserGuide%20v1.0.pdf";
 
     const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();

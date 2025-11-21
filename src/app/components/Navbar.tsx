@@ -15,7 +15,7 @@ export default function Navbar() {
                         {/* Logo/Brand (clickable, goes Home) */}
                         <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
                             <Image
-                                src="https://aethergeo.org/AetherGeo.svg"
+                                src="https://files.aethergeo.org/AetherGeo.svg"
                                 alt="AetherGeo logo"
                                 width={36}
                                 height={36}

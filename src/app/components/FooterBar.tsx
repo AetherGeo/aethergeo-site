@@ -13,7 +13,7 @@ export default function FooterBar() {
                     <div className="flex items-center gap-3">
                         <div className="h-8 w-auto flex items-center">
                             <Image
-                                src="https://aethergeo.org/uporto.svg"
+                                src="https://files.aethergeo.org/uporto.svg"
                                 alt="University of Porto"
                                 width={80}
                                 height={32}
@@ -23,7 +23,7 @@ export default function FooterBar() {
                         <div className="h-8 w-auto flex items-center">
                             <Image
                                 src="/s34i.svg"
-                                alt="https://aethergeo.org/S34I"
+                                alt="https://files.aethergeo.org/S34I"
                                 width={80}
                                 height={32}
                                 className="h-8 w-auto object-contain"
