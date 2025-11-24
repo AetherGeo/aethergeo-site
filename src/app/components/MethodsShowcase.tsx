@@ -65,20 +65,20 @@ export default function MethodsShowcase() {
     };
 
     return (
-        <section className="relative w-full -mt-6 sm:-mt-8 py-10 sm:py-16 bg-gradient-to-b from-white to-zinc-50 dark:from-zinc-950 dark:to-black">
+        <section className="relative w-full -mt-6 sm:-mt-8 py-10 sm:py-16 bg-gradient-to-b from-zinc-950 to-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Section Title */}
                 <div className="text-center mb-6 sm:mb-8">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2 sm:mb-3">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 sm:mb-3">
                         Processing Methods
                     </h2>
-                    <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto px-4">
+                    <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto px-4">
                         Explore our advanced geospatial processing capabilities clicking on the different buttons inside the 3D model.
                     </p>
                 </div>
 
                 {/* Main Content Container */}
-                <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-black/[.08] dark:border-white/[.08] shadow-xl overflow-hidden">
+                <div className="bg-zinc-900 rounded-2xl border border-white/[.08] shadow-xl overflow-hidden">
                     {/* 3D Viewer with Overlay Controls */}
                     <div className="relative bg-zinc-900 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
                         {/* 3D Model */}
@@ -93,7 +93,7 @@ export default function MethodsShowcase() {
                                     className={`group relative w-12 h-12 sm:w-14 sm:h-14 rounded-xl transition-all duration-300 flex items-center justify-center ${
                                         selectedMethod === method.id
                                             ? "bg-blue-500 shadow-lg shadow-blue-500/50 scale-110"
-                                            : "bg-white/90 dark:bg-zinc-800/90 hover:bg-white dark:hover:bg-zinc-700 hover:scale-105"
+                                            : "bg-zinc-800/90 hover:bg-zinc-700 hover:scale-105"
                                     } backdrop-blur-sm`}
                                     title={method.title}
                                 >
@@ -115,14 +115,14 @@ export default function MethodsShowcase() {
 
                     {/* Method Details Panel (appears when method selected) */}
                     {currentMethod && (
-                        <div className="p-4 sm:p-6 bg-white dark:bg-zinc-900 border-t border-black/[.08] dark:border-white/[.08] animate-in slide-in-from-bottom duration-300">
+                        <div className="p-4 sm:p-6 bg-zinc-900 border-t border-white/[.08] animate-in slide-in-from-bottom duration-300">
                             <div className="flex items-start gap-3 sm:gap-4">
                                 <span className="text-2xl sm:text-3xl flex-shrink-0">{currentMethod.icon}</span>
                                 <div className="flex-1 min-w-0">
-                                    <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white mb-2">
+                                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
                                         {currentMethod.title}
                                     </h3>
-                                    <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                    <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
                                         {currentMethod.details}
                                     </p>
                                 </div>
@@ -132,8 +132,8 @@ export default function MethodsShowcase() {
 
                     {/* Instructions when nothing selected */}
                     {!currentMethod && (
-                        <div className="p-4 sm:p-6 bg-zinc-50 dark:bg-zinc-950 border-t border-black/[.08] dark:border-white/[.08]">
-                            <p className="text-sm sm:text-base text-center text-zinc-600 dark:text-zinc-400">
+                        <div className="p-4 sm:p-6 bg-zinc-950 border-t border-white/[.08]">
+                            <p className="text-sm sm:text-base text-center text-zinc-400">
                                 Select a processing method from the icons on the right to visualize data overlays
                             </p>
                         </div>

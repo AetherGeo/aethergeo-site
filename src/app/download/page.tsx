@@ -5,27 +5,27 @@ import Link from "next/link";
 
 export default function DownloadPage() {
     return (
-        <main className="min-h-screen bg-zinc-50 dark:bg-black pt-20 pb-32 sm:pb-16">
+        <main className="min-h-screen bg-black pt-20 pb-32 sm:pb-16">
             <div className="max-w-4xl mx-auto px-6">
                 {/* Intro */}
                 <section className="mb-10">
-                    <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4">
+                    <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                         Download AetherGeo
                     </h1>
-                    <p className="text-lg text-zinc-700 dark:text-zinc-300 mb-3">
+                    <p className="text-lg text-zinc-300 mb-3">
                         Get started with AetherGeo by downloading the latest release or accessing the source code directly from GitHub.
                     </p>
-                    <p className="text-base text-zinc-600 dark:text-zinc-400">
+                    <p className="text-base text-zinc-400">
                         We recommend checking our GitHub repository for the most up-to-date builds and release notes.
                     </p>
                 </section>
 
                 {/* Latest from GitHub */}
-                <section className="rounded-2xl border border-black/[.08] dark:border-white/[.12] bg-white dark:bg-zinc-900 p-6 sm:p-8 shadow-sm mb-8">
+                <section className="rounded-2xl border border-white/[.12] bg-zinc-900 p-6 sm:p-8 shadow-sm mb-8">
                     <h2 className="text-2xl font-semibold text-black dark:text-white mb-3">
                         Latest Updates from GitHub
                     </h2>
-                    <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+                    <p className="text-zinc-400 mb-4">
                         For the latest features, bug fixes, and pre-release builds, visit our GitHub repository.
                         You can download source code, view open issues, and contribute to the project.
                     </p>
@@ -34,7 +34,7 @@ export default function DownloadPage() {
                         href="https://github.com/AetherGeo"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-black text-base font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors"
+                        className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white text-black text-base font-semibold hover:bg-zinc-100 transition-colors"
                     >
                         <svg
                             className="w-5 h-5"
@@ -57,25 +57,25 @@ export default function DownloadPage() {
                 </section>
 
                 {/* Legacy Installers */}
-                <section className="rounded-2xl border border-black/[.08] dark:border-white/[.12] bg-white dark:bg-zinc-900 p-6 sm:p-8 shadow-sm">
-                    <h2 className="text-2xl font-semibold text-black dark:text-white mb-3">
+                <section className="rounded-2xl border border-white/[.12] bg-zinc-900 p-6 sm:p-8 shadow-sm">
+                    <h2 className="text-2xl font-semibold text-white mb-3">
                         Legacy Installers
                     </h2>
-                    <p className="text-zinc-600 dark:text-zinc-400 mb-6">
+                    <p className="text-zinc-400 mb-6">
                         Stable release installers for previous versions of AetherGeo. These are recommended for production use.
                     </p>
 
                     {/* Windows v1.0 */}
-                    <div className="rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-dashed border-black/[.06] dark:border-white/[.1] p-4 sm:p-5">
+                    <div className="rounded-xl bg-zinc-950 border border-dashed border-white/[.1] p-4 sm:p-5">
                         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                             <div className="flex-1 min-w-0">
-                                <h3 className="text-lg font-semibold text-black dark:text-white mb-1">
+                                <h3 className="text-lg font-semibold text-white mb-1">
                                     AetherGeo v1.0 for Windows
                                 </h3>
-                                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                <p className="text-sm text-zinc-400 mb-3">
                                     Initial stable release for Windows (64-bit). Includes all core features and documentation.
                                 </p>
-                                <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-500">
+                                <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
                                     <span className="inline-flex items-center gap-1">
                                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                             <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
@@ -100,7 +100,7 @@ export default function DownloadPage() {
                         </div>
                     </div>
 
-                    <p className="mt-6 text-xs sm:text-sm text-zinc-500 dark:text-zinc-500">
+                    <p className="mt-6 text-xs sm:text-sm text-zinc-500">
                         Additional platforms will be available in future releases. Check our GitHub for build instructions.
                     </p>
                 </section>

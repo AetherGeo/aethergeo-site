@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 right-0 z-50 bg-white/50 dark:bg-black/50 backdrop-blur-sm border-b border-black/[.08] dark:border-white/[.145]">
+            <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm border-b border-white/[.145]">
                 <div className="max-w-7xl mx-auto px-6 sm:px-8">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo/Brand (clickable, goes Home) */}
@@ -20,7 +20,7 @@ export default function Navbar() {
                                 width={36}
                                 height={36}
                             />
-                            <span className="text-xl font-semibold text-black dark:text-white">
+                            <span className="text-xl font-semibold text-white">
                                 AetherGeo
                             </span>
                         </Link>
@@ -28,7 +28,7 @@ export default function Navbar() {
                         {/* Menu Button */}
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="p-2 rounded-lg hover:bg-black/[.04] dark:hover:bg-white/[.08] transition-colors"
+                            className="p-2 rounded-lg hover:bg-white/[.08] transition-colors"
                             aria-label="Toggle menu"
                         >
                             <svg
@@ -53,29 +53,29 @@ export default function Navbar() {
 
             {/* Dropdown Menu */}
             {isMenuOpen && (
-                <div className="fixed top-16 right-0 z-40 w-64 bg-white/95 dark:bg-black/95 backdrop-blur-md border-l border-b border-black/[.08] dark:border-white/[.145] shadow-lg">
+                <div className="fixed top-16 right-0 z-40 w-64 bg-black/95 backdrop-blur-md border-l border-b border-white/[.145] shadow-lg">
                     <div className="flex flex-col p-4 gap-2">
                         <a
                             href="/"
-                            className="px-4 py-3 rounded-lg hover:bg-black/[.04] dark:hover:bg-white/[.08] transition-colors text-black dark:text-white"
+                            className="px-4 py-3 rounded-lg hover:bg-white/[.08] transition-colors text-white"
                         >
                             Home
                         </a>
                         <a
                             href="/download"
-                            className="px-4 py-3 rounded-lg hover:bg-black/[.04] dark:hover:bg-white/[.08] transition-colors text-black dark:text-white"
+                            className="px-4 py-3 rounded-lg hover:bg-white/[.08] transition-colors text-white"
                         >
                             Download
                         </a>
                         <a
                             href="/docs"
-                            className="px-4 py-3 rounded-lg hover:bg-black/[.04] dark:hover:bg-white/[.08] transition-colors text-black dark:text-white"
+                            className="px-4 py-3 rounded-lg hover:bg-white/[.08] transition-colors text-white"
                         >
                             Documentation
                         </a>
                         <a
                             href="/articles"
-                            className="px-4 py-3 rounded-lg hover:bg-black/[.04] dark:hover:bg-white/[.08] transition-colors text-black dark:text-white"
+                            className="px-4 py-3 rounded-lg hover:bg-white/[.08] transition-colors text-white"
                         >
                             Articles
                         </a>

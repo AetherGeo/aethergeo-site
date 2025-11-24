@@ -40,12 +40,12 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
     return (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm">
-            <div className="relative w-full max-w-lg mx-4 rounded-2xl bg-white dark:bg-zinc-950 border border-black/[.08] dark:border-white/[.08] shadow-2xl">
+            <div className="relative w-full max-w-lg mx-4 rounded-2xl bg-zinc-950 border border-white/[.08] shadow-2xl">
                 {/* Close button */}
                 <button
                     type="button"
                     onClick={onClose}
-                    className="absolute top-3 right-3 p-2 rounded-full hover:bg-black/[.04] dark:hover:bg-white/[.08] text-zinc-600 dark:text-zinc-300"
+                    className="absolute top-3 right-3 p-2 rounded-full hover:bg-white/[.08] text-zinc-300"
                     aria-label="Close contact form"
                 >
                     <span className="sr-only">Close</span>
@@ -53,17 +53,17 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </button>
 
                 <div className="px-6 pt-6 pb-5 sm:px-8 sm:pt-8 sm:pb-6">
-                    <h2 className="text-xl sm:text-2xl font-semibold text-black dark:text-white mb-2">
+                    <h2 className="text-xl sm:text-2xl font-semibold text-white mb-2">
                         Contact AetherGeo
                     </h2>
-                    <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 mb-6">
+                    <p className="text-sm sm:text-base text-zinc-400 mb-6">
                         Have questions, feedback, or want to join the project? Fill in the details and we&apos;ll get back to you.
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                                <label className="block text-sm font-medium text-zinc-300 mb-1">
                                     Name
                                 </label>
                                 <input
@@ -71,13 +71,13 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                     required
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
-                                    className="w-full rounded-lg border border-black/[.08] dark:border-white/[.15] bg-white dark:bg-zinc-900 px-3 py-2 text-sm sm:text-base text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/70"
+                                    className="w-full rounded-lg border border-white/[.15] bg-zinc-900 px-3 py-2 text-sm sm:text-base text-white focus:outline-none focus:ring-2 focus:ring-blue-500/70"
                                 />
                             </div>
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                            <label className="block text-sm font-medium text-zinc-300 mb-1">
                                 Subject
                             </label>
                             <input
@@ -85,12 +85,12 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 value={subject}
                                 onChange={(e) => setSubject(e.target.value)}
                                 placeholder="Collaboration, bug report, question..."
-                                className="w-full rounded-lg border border-black/[.08] dark:border-white/[.15] bg-white dark:bg-zinc-900 px-3 py-2 text-sm sm:text-base text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/70"
+                                className="w-full rounded-lg border border-white/[.15] bg-zinc-900 px-3 py-2 text-sm sm:text-base text-white focus:outline-none focus:ring-2 focus:ring-blue-500/70"
                             />
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1">
+                            <label className="block text-sm font-medium text-zinc-300 mb-1">
                                 Message
                             </label>
                             <textarea
@@ -98,7 +98,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 rows={4}
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className="w-full rounded-lg border border-black/[.08] dark:border-white/[.15] bg-white dark:bg-zinc-900 px-3 py-2 text-sm sm:text-base text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/70"
+                                className="w-full rounded-lg border border-white/[.15] bg-zinc-900 px-3 py-2 text-sm sm:text-base text-white focus:outline-none focus:ring-2 focus:ring-blue-500/70"
                             />
                         </div>
 
@@ -106,7 +106,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                             <button
                                 type="button"
                                 onClick={onClose}
-                                className="px-4 py-2 rounded-full border border-black/[.08] dark:border-white/[.2] text-sm sm:text-base text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                                className="px-4 py-2 rounded-full border border-white/[.2] text-sm sm:text-base text-zinc-300 bg-zinc-900 hover:bg-zinc-800 transition-colors"
                             >
                                 Cancel
                             </button>

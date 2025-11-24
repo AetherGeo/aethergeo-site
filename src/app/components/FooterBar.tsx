@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function FooterBar() {
     return (
-        <footer className="fixed bottom-0 left-0 right-0 z-50 border-t border-black/[.08] dark:border-white/[.145] bg-white/60 dark:bg-black/60 backdrop-blur-sm">
+        <footer className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/[.145] bg-black/60 backdrop-blur-sm">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
                 {/* Partners */}
                 <div className="flex items-center gap-3">
-                    <span className="text-sm sm:text-base text-zinc-700 dark:text-zinc-300 font-medium">
+                    <span className="text-sm sm:text-base text-zinc-300 font-medium">
                         Partners:
                     </span>
                     <div className="flex items-center gap-3">
@@ -33,7 +33,7 @@ export default function FooterBar() {
                 </div>
 
                 {/* Text + Social links together */}
-                <div className="flex items-center gap-4 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+                <div className="flex items-center gap-4 text-xs sm:text-sm text-zinc-400">
                     <span className="whitespace-nowrap">
                         @AetherGeo 2025
                     </span>
@@ -41,7 +41,7 @@ export default function FooterBar() {
                         href="https://github.com/AetherGeo"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm sm:text-base text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white transition-colors"
+                        className="flex items-center gap-2 text-sm sm:text-base text-zinc-300 hover:text-white transition-colors"
                     >
                         <svg
                             className="w-5 h-5"
