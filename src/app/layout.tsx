@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "AetherGeo",
     description: "AetherGeo Project",
+    icons: {
+        icon: "/favicon.ico",
+    },
 };
 
 export default function RootLayout({

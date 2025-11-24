@@ -95,7 +95,7 @@ export default function ArticlesPage() {
                             <button
                                 type="button"
                                 onClick={() => setIsContactOpen(true)}
-                                className="flex-shrink-0 inline-flex items-center justify-center px-8 py-3 rounded-full border border-white/[.2] text-lg font-semibold text-white bg-zinc-50 dark:bg-black hover:bg-zinc-800 transition-colors"
+                                className="flex-shrink-0 inline-flex items-center justify-center px-8 py-3 rounded-full border border-white/[.2] text-lg font-semibold text-white bg-black hover:bg-zinc-800 transition-colors"
                             >
                                 Contact Us
                             </button>

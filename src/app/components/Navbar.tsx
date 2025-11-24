@@ -28,11 +28,11 @@ export default function Navbar() {
                         {/* Menu Button */}
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="p-2 rounded-lg hover:bg-white/[.08] transition-colors"
+                            className="p-2 rounded-lg bg-white/[.08] hover:bg-white/[.12] border border-white/[.08] transition-colors"
                             aria-label="Toggle menu"
                         >
                             <svg
-                                className="w-6 h-6 text-foreground"
+                                className="w-6 h-6 text-white"
                                 fill="none"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"

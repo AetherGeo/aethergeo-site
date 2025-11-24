@@ -22,7 +22,7 @@ export default function DownloadPage() {
 
                 {/* Latest from GitHub */}
                 <section className="rounded-2xl border border-white/[.12] bg-zinc-900 p-6 sm:p-8 shadow-sm mb-8">
-                    <h2 className="text-2xl font-semibold text-black dark:text-white mb-3">
+                    <h2 className="text-2xl font-semibold text-white mb-3">
                         Latest Updates from GitHub
                     </h2>
                     <p className="text-zinc-400 mb-4">

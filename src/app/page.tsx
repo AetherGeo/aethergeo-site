@@ -10,7 +10,7 @@ const Globe3D = dynamic(() => import("./components/3DEarth"), {
     ssr: false,
     loading: () => (
         <div className="w-full h-[600px] flex items-center justify-center">
-            <div className="animate-pulse text-zinc-400 dark:text-zinc-600">
+            <div className="animate-pulse text-zinc-600">
                 Loading globe...
             </div>
         </div>
