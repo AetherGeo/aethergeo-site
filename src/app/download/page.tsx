@@ -88,7 +88,7 @@ export default function DownloadPage() {
                             </div>
 
                             <a
-                                href="https://aethergeo.org/AetherGeo_Windows_v1.0.exe"
+                                href="https://files.aethergeo.org/AetherGeo_Windows_v1.0.exe"
                                 download
                                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 text-white text-sm sm:text-base font-semibold hover:bg-blue-500 transition-colors sm:whitespace-nowrap"
                             >
